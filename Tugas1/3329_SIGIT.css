@@ -1,0 +1,17 @@
+#judul{
+    color:blue;
+}
+
+.kotak-paragraf{
+    background-color: grey;
+}
+
+#garis1{
+    background-color: black; 
+    height: 2px;
+}
+
+#garis2{
+    background-color: grey; 
+    height: 2px;
+}
