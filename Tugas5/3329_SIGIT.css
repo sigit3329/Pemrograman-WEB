@@ -1,0 +1,39 @@
+h3 {
+    color: rgb(192, 81, 47);
+}
+
+body {
+    background-color: rgb(194, 192, 192);
+}
+
+#teks {
+    margin-right: 100px;
+    text-align: justify;
+}
+
+table,td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: rgb(80, 202, 202);
+}
+
+th,td {
+    border: 2px solid #fff;
+    padding: 5px;
+}
+
+th {
+    font-weight: 9000;
+}
+
+table {
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+#judul {
+    background-color: rgb(243, 60, 188);
+    width: 50%;
+    text-align: center;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>20.11.3329_SIGIT</title>
+</head>
+<body>
+	<h1><center>Kalkulator Sederhana</center></h1>
+	<center>
+		<input type="number" name="nomor1" id="nomor1" placeholder="Masukkan angka 1"/> 
+		<input type="number" name="nomor2" id="nomor2" placeholder="Masukkan angka 2"/>
+	</center>
+	<br>
+	<center>
+		<button type="button" onclick="tambah()" style="width: 40px; height: 30px;">+</button> 
+		<button type="button" onclick="kurang()" style="width: 40px; height: 30px;">-</button> 
+		<button type="button" onclick="bagi()" style="width: 40px; height: 30px;">/</button>
+		<button type="button" onclick="kali()" style="width: 40px; height: 30px;">*</button>
+	</center>
+	<br>
+	<center>
+		<button type="button" onclick="bersih()" style="width: 50px; height:40px">Clear</button>
+	</center>
+	<br>
+	<center>
+		<div id="tempatHasil" style="background-color: rgb(255, 251, 0); width:400px; height: 150px; color:rgb(98, 0, 255);text-align: center;
+		vertical-align: middle;line-height: 150px; font-size: 18px; font-weight: 500;">
+			Hasil
+		</div>
+	</center>
+	<script>
+		function bersih(){
+			document.getElementById('nomor1').value = "";
+			document.getElementById('nomor2').value = "";
+			document.getElementById('tempatHasil').innerHTML = "Hasil";
+		}
+
+		function tambah(){
+			let num1 = document.getElementById('nomor1').value;
+			let num2 = document.getElementById('nomor2').value;
+
+			if(num1 != "" && num2 != ""){
+				let labelHasil = document.getElementById('tempatHasil');
+				labelHasil.innerHTML = parseInt(num1)+parseInt(num2);
+			}else{
+				alert("Angka tidak boleh kosong, Silahkan Isi dulu!");
+			}
+		}
+
+		function kurang(){
+			let num1 = document.getElementById('nomor1').value;
+			let num2 = document.getElementById('nomor2').value;
+
+			if(num1 != "" && num2 != ""){
+				let labelHasil = document.getElementById('tempatHasil');
+				labelHasil.innerHTML = parseInt(num1)-parseInt(num2);
+			}else{
+				alert("Angka tidak boleh kosong, Silahkan Isi dulu!");
+			}
+		}
+
+		function bagi(){
+			let num1 = document.getElementById('nomor1').value;
+			let num2 = document.getElementById('nomor2').value;
+
+			if(num1 != "" && num2 != ""){
+				let labelHasil = document.getElementById('tempatHasil');
+				labelHasil.innerHTML = parseInt(num1)/parseInt(num2);
+			}else{
+				alert("Angka tidak boleh kosong, Silahkan Isi dulu!");
+			}
+		}
+
+		function kali(){
+			let num1 = document.getElementById('nomor1').value;
+			let num2 = document.getElementById('nomor2').value;
+
+			if(num1 != "" && num2 != ""){
+				let labelHasil = document.getElementById('tempatHasil');
+				labelHasil.innerHTML = parseInt(num1)*parseInt(num2);
+			}else{
+				alert("Angka tidak boleh kosong, Silahkan Isi dulu!");
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: sans-serif;
+    
+}
+
+.header {
+    background-color: #9d0ffc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.body {
+    background-color: white;
+    float: left;
+    width: 50%;
+    height: 720px;
+    display: flex;
+    align-items: center;
+}
+
+.body-tengah {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.body-2 {
+    background-color: white;
+    height: 720px;    
+}
+
+.body-blog {
+    padding-top: 30px;
+    background-color: #ededed;
+    height: 250px;
+}
+
+.body1 {
+    padding: 10px;
+    background-color: #ededed;
+    float: left;
+    width: 50%;
+    height: 480px;
+}
+
+.body1-2 {
+    background-color: #ededed;
+    height: 480px;
+}
+
+.footer {
+    margin-top: 50px;
+    height: 70px;
+    background-color: #9d0ffc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bawah {
+    display: inline-block;
+    color: white;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+li, a, button {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav  {
+    list-style: none;
+    margin-right: 500px;
+}
+
+.nav  li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav  li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav  li a:hover {
+    color: blue;
+}
+
+.header .nav button {
+    position: relative;
+    margin-left: 20px;
+    padding: 10px 25px;
+    background-color: #9d0ffc;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    left: 500px;
+}
+
+.body .body-tengah .kotak button {
+    margin-top: 10px;
+    padding: 10px 25px;
+    background-color: #9d0ffc;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    left: 500px;
+}
+
+.gambar1 {
+    margin-top: 100px;
+    width: 730px;
+
+}
+
+.user {
+    margin-top: 20px;
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.body1-2 .about {
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: justify;
+}
